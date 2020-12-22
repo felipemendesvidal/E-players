@@ -1,0 +1,270 @@
+/* definindo variaveis no css */
+:root{
+    /* inicia uma variavel com -- */
+    /* cor do fundo */
+    --background:#1e1c21;
+        --pink:#fc1e8b;
+        --purple:#7278c3;
+        --blue:#00abdc;
+}
+/* reset */
+*{padding: 0px; margin: 0px; box-sizing: border-box;}
+.gradient{
+    background: rgba(213,55,155,1);
+    background: -moz-linear-gradient(left, rgba(213,55,155,1) 0%, rgba(119,117,193,1) 69%, rgba(114,119,195,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(213,55,155,1)), color-stop(69%, rgba(119,117,193,1)), color-stop(100%, rgba(114,119,195,1)));
+    background: -webkit-linear-gradient(left, rgba(213,55,155,1) 0%, rgba(119,117,193,1) 69%, rgba(114,119,195,1) 100%);
+    background: -o-linear-gradient(left, rgba(213,55,155,1) 0%, rgba(119,117,193,1) 69%, rgba(114,119,195,1) 100%);
+    background: -ms-linear-gradient(left, rgba(213,55,155,1) 0%, rgba(119,117,193,1) 69%, rgba(114,119,195,1) 100%);
+    background: linear-gradient(to right, rgba(213,55,155,1) 0%, rgba(119,117,193,1) 69%, rgba(114,119,195,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d5379b', endColorstr='#7277c3', GradientType=1 );
+}
+    /* chamar variavel */
+body{background-color: var(--background); font-family: 'Titillium Web', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+    /* container padrão */
+.container{width: 80%; margin: 0px auto;max-width: 1200px;}
+ul{list-style-type: none;}
+a{text-decoration: none;}
+/* fim reset */
+/* header */
+header a{color:#fff;text-decoration: none;}
+.cabecalho{display: flex; justify-content: space-around; align-items: center; padding: 20px 0px; box-shadow: 0px 10px 10px rgba(0,0,0,0.5); z-index: 99;}
+.cabecalho nav{width: 60%;}
+.cabecalho ul{display: flex; justify-content: space-around;}
+.cabecalho ul li a{text-transform: uppercase; letter-spacing: 2px;}
+/* main */
+.banner{width: 100%; height: 500px; background: url(../img/meta_mundo.jpg) no-repeat center;background-size: cover; display: flex; justify-content: center; align-items: center;}
+.btn{color: #fff; text-transform: uppercase; letter-spacing: 2px;padding: 8px 12px; border-radius: 5px;}
+.banner .btn{margin-top: 230px;}
+/* sobre */
+.sobre{
+    width: 100%;
+    min-height:300px; 
+    background-image: url(../img/Teams/T6.jpg); 
+    background-position: center; 
+    background-size: cover; 
+    background-attachment: fixed;
+    clip-path: polygon(0 14%, 100% 0, 100% 71%, 0 100%)/*propriedade para deixar imargem cortada*/;
+    margin: 10px 0px; 
+    color: #fff; 
+    padding: 200px 0px;
+}
+
+
+
+.sobre .container{display: flex; justify-content: flex-start;}
+.sobre .container div{width: 50%; z-index: 2;}
+
+
+
+
+/* para a imagem vazar do container */
+.campea{position: absolute; right: 300px; top: 550px; z-index: 1;}
+/* horarios */
+#horarios{
+    width: 100%;
+    min-height: 100px;
+    margin: 30px 0px;
+    box-shadow: 0px 0px 27px #000;
+    background: rgba(67,43,95,1);
+    background: -moz-linear-gradient(top, rgba(67,43,95,1) 0%, rgba(30,28,33,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(67,43,95,1)), color-stop(100%, rgba(30,28,33,1)));
+    background: -webkit-linear-gradient(top, rgba(67,43,95,1) 0%, rgba(30,28,33,1) 100%);
+    background: -o-linear-gradient(top, rgba(67,43,95,1) 0%, rgba(30,28,33,1) 100%);
+    background: -ms-linear-gradient(top, rgba(67,43,95,1) 0%, rgba(30,28,33,1) 100%);
+    background: linear-gradient(to bottom, rgba(67,43,95,1) 0%, rgba(30,28,33,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#432b5f', endColorstr='#1e1c21', GradientType=0 );
+}
+.aovivo,.embreve{border-left: 1px solid var(--purple);color: #fff;padding: 0px 30px;display: flex; justify-content: space-around; text-transform: uppercase;}
+.partida img{width: 40px; }
+#horarios .container{display: flex; justify-content: space-around; align-items: center;padding: 30px 0px;}
+#horarios h2{margin:0px 15px}
+.embreve{width: 60%; }
+.partida{padding: 0px 10px; display: flex; align-items: center;}
+
+.content{display: flex; color: #fff;}
+.noticias{width: 70%;padding-right: 40px; display: flex; flex-wrap: wrap;}
+
+.card{width: 28%; margin: 2%; box-shadow: 0px 2px 6px#000;background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(30,28,33,1) 30%, rgba(0,0,0,1) 100%) ; }
+.card img{width: 100%; height: 140px;}
+.card h4{padding: 1em 0 0 1em;;}
+.card p{ font-size: 0.8em; letter-spacing: 1px; padding: 1em;}
+.recentes{box-shadow: 0px 2px 6px#000;background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(30,28,33,1) 30%, rgba(0,0,0,1) 100%) ;padding: 1.5em; text-align: center;}
+.resultado{text-align: center; margin: 2em 0;}
+.resultado img{width: 35px;}
+.placar{font-size: 1.5em; text-shadow: 3px 3px 6px #000;}
+footer{box-shadow: 0px 0px 10px #000; color: #fff; margin-top: 30px;}
+footer a{color: #fff;}
+footer .sociais{display: flex; justify-content: space-evenly; color: var(--purple);font-size: 2em; padding: 1.2em 0px;}
+footer .container{display: flex; justify-content: space-between; padding: 2em;}
+footer h5{padding-bottom: 1.2em; color:#474747; font-size: 1.7em; text-transform: uppercase;}
+footer h6{text-align: end; text-transform: uppercase; font-size: 1.1em;}
+.preto{width: 100%; background-color: black;}
+footer div p{text-align: center; color: #474747; text-transform: uppercase; padding: 1em; font-weight: bold;}
+/* cadastro de jogador */
+.titulopg{width: 100%; height: 400px; background-image: url(../img/cadastro.png);background-repeat: no-repeat; background-size: cover;color: #fff; justify-content: center; align-items: center; display: flex;  text-transform: uppercase;}
+.form_cadastro{width: 100%; max-width: 500px;  box-shadow: 0px 2px 6px#000,0px -4px 9px rgba(67,43,95,1); margin: auto; display: flex; flex-direction: column; align-items: center;color: #fff; margin-top: 3em; margin-bottom: 3em; padding: 1em; }
+.campo{width: 100%; display: flex; justify-content: space-between; margin-bottom: 0.5em; }
+.campo label{text-transform: uppercase;}
+/* definindo iputs especificos */
+input[type="email"],input[type="text"],input[type="password"],input[type="date"], select{border: none; background-color: #1e1c21; color: gray; border-bottom: 1px solid #474747; width: 50%; padding-left: 0.5em;}
+input[type="date"]{text-align: center; font-size: 1.2em;}
+/* linha ao clicar no input */
+input:focus, select:focus{outline: none; background-color:#474747; box-shadow: 0px 0px 5px #474747; border-bottom: 1px solid var(--purple);}
+input[type="radio"]{margin-right: 0.1em;}
+fieldset{width: 100%; border: none; margin-bottom: 2em;}
+fieldset legend{text-transform: uppercase;}
+fieldset label{margin-right: 0.5em;}
+.txt{align-items: center; justify-content: start; } 
+.txt label{text-transform: initial;margin-left: 1em;} 
+.form_cadastro button{border: none; width: 50%; margin: 2em; cursor: pointer;}
+/* menu mobile */
+.cabecalho .fa-bars{
+    color: var(--purple);
+    font-size: 2em;
+    display: none;
+}
+/* responsividade */
+@media screen and (max-width:1200px){
+    .container{width: 95%; }
+    .sobre .container{display: flex; justify-content: flex-start;}
+    .sobre .container div{width: 50%; ;}
+    
+    .campea{ right: 0px;}
+}
+@media screen and (max-width:768px){
+    .cabecalho img{max-width: 190px;}
+    .container{width: 98%; }
+    .campea{max-width: 350px; margin-top: 4em;}
+    .sobre{
+      
+        padding: 70px 0px;
+    }
+    .sobre .container div{width: 55%; margin-left: 30px;}
+    .sobre h1{
+        font-size: 1.8em;
+    }
+    .sobre p{
+        font-size: 0.8em;
+        letter-spacing: 1px;
+    }
+    
+    .aovivo{
+       width: 50%;
+       flex-wrap: wrap;
+       padding: 5.3em 5px;
+       justify-content: center;
+    }
+    .embreve{
+        width: 40%;
+        flex-wrap: wrap;
+    
+     }
+     .embreve .partida{
+     margin: 10px 5px 0px;
+
+     }
+     .noticias{
+         flex-direction: column;
+     }
+     .card{
+         width: 100%;
+         display: flex;
+     }
+     .card img{
+         width:30% ;
+         
+     }
+     .recentes .btn{
+        letter-spacing: 1px; padding: 8px 5px;  font-size: 0.9em;
+     }
+     footer .container{
+         padding-top: 0.3em;
+         width: 100%;
+     }
+     .sociais{
+         padding: 0.5em 0px;
+     }
+    .web_logo_footer{
+         display: flex;
+         flex-direction: column;
+         justify-content:center ;
+         margin: 1em;
+     }
+}
+     /* mobile */
+
+@media screen and (max-width:460px){
+    .cabecalho .fa-bars{
+       
+        display: block;
+    }
+    #menu{
+        position: absolute;
+        top: 71px;
+        background-color:#000;
+        width: 100%;
+        display: none;
+
+    }
+    .cabecalho div{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2em;
+    }
+    .cabecalho ul{
+        flex-direction: column;
+        height: 250px;
+        padding-left: 2em;
+    }
+    .cabecalho ul a{
+        padding: 0.5em 70% 1em 0.5em ; 
+        margin-left: 2em;
+        margin: 0.1em 0;}
+    .campea{
+        display: none;
+    }
+    .sobre .container div{
+        width: 85%;
+        text-align: justify;
+    }
+    .sobre .container h1{
+        text-align: center;
+        margin-bottom: 1em;
+    }
+    #horarios .container{
+        flex-direction: column;
+    }
+    .aovivo, .embreve{
+        padding: 1em;
+        border: none;
+    }
+    .partida{
+        margin: 1em 0;
+    }
+    .card{
+        flex-direction: column;
+    }
+    .card img{
+        width: 100%;
+        /* cerve para pegar objetos e imagens e ajusta ao tamanhao do container sem distorcer */
+        object-fit: cover;
+        object-position: top;
+    }
+    .noticias{
+        padding-right: 15px;
+        width: 95%;
+
+    }
+    .recentes {
+        padding: 0.5em;
+    }
+    .content{
+        flex-direction: column;
+    }
+    footer .content{ flex-direction: column;}
+}

@@ -1,0 +1,148 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Players - cadastro</title>
+    <!-- icones -->
+    <script src="https://kit.fontawesome.com/525a7ba6e9.js" crossorigin="anonymous"></script>
+     <!-- google font -->
+     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap" rel="stylesheet">
+     <!-- o css é sempre depois, o ultimo a carregar -->
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+    <!-- inicio header -->
+    <header>
+        <!-- alinhando tudo ao centro -->
+        <div class="container cabecalho">
+               <a href="index.html" title="voltar a pagina inicial"><img src="img/Logo.svg" alt="logo do e-players escrito em varios ton com gradiente"></a>
+               <nav>
+                   <ul>
+                       <li><a href="index.html" title="voltar a pagina inicial">Inicio</a></li>
+                       <li><a href="index.html#horarios" title="ir para os horarios de partidas">Horarios</a></li>
+                       <!-- title é a descrição do navergador para saber onde vai, leitor de telas -->
+                       <li><a href="index.html#resultados" title="ir aos resultados da partida">Resultados</a></li>
+                       <li><a href="index.html#news" title="ir ate sessão de noticias">Noticiias</a></li>
+                       <li><a href="#"title="pesquisar" ><i class="fas fa-search"></i></a></li>
+                   </ul>
+               </nav>
+            
+        </div>
+    </header>
+    <!-- fim header -->
+    <!-- inicio main -->
+    <main>
+        <div class="titulopg">
+            <h1>cadastro de jogador</h1>
+
+        </div>
+        <form action="" method="post" class="form_cadastro">
+
+            <div class="campo">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nomehogador" id="nome" >
+            </div>
+
+            <div class="campo">
+                <label for="nik">Nick name:</label>
+                <input type="text" name="nikhogador" id="nik">
+            </div>
+
+            <div class="campo">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div class="campo">
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha">
+            </div>
+
+            
+            <div class="campo">
+                <label for="senhaconfirma">Confime sua senha:</label>
+                <input type="password" name="senhaconfirma" id="senhaconfirma">
+            </div>
+
+            <div class="campo">
+                <label for="nascmento">data nascmento:</label>
+                <input type="date" name="nascmento" id="nascmento" max="2020-03-05" min="900-03-05">
+            </div>
+
+            <div class="campo">
+                <label for="pais">Pais:</label>
+                <select name="pais" id="pais">
+                    <option value=""> selecione uma opção...</option>
+                    <option value="br">brasil</option>
+                    <option value="US">USA</option>
+                    <option value="ES">espanha</option>
+                </select>
+            </div>
+            <fieldset>
+                <legend>Sexo:</legend>
+
+                <input type="radio" name="sexo" value="sex" id="sexo">
+                <label for="masculino">Masculino</label>
+
+                <input type="radio" name="sexo" value="sex" id="sexo">
+                <label for="feminino">feminino</label>
+            </fieldset>
+            <div class="campo txt">
+                <input type="checkbox" name="check" id="check">
+                <label for="checkbok" >Declaro que li os termos de uso e concordo  com tudo</label>
+            </div>
+        <button type="submit" class="btn gradient"> Cadastrar</button>
+
+        </form>
+    </main>
+    <!-- fim main -->
+    <!-- footer -->
+    <footer>
+        <div class="container">
+
+            <div>
+                <h5>Institucional</h5>
+                <nav>
+                    <ul>
+                        <li><a href="#">anuncie</a></li>
+                        <li><a href="#">politicas de privacidade</a></li>
+                        <li><a href="#">Politicas</a></li>
+                        <li><a href="#">Fale conosco</a></li>
+                        <li><a href="#"> Regras</a></li>
+                        <li><a href="#">termos de uso</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div>
+                <img src="img/Logo.svg" alt="logo do projeto e-players">
+                <div class="sociais">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter-square"></i>
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-google"></i>
+
+                </div>
+
+            </div>
+            <div>
+                <h5>Principais links</h5>
+                <h6>liga CBL</h6>
+                <h6>Liga LCK</h6>
+                <h6>Liga profissional de cs</h6>
+                <h6>Liga wkg</h6>
+
+            </div>
+
+        </div>
+        <div class="preto">
+            <p>Todos os direitos reservados</p>
+        </div>
+        
+
+    </footer>
+    <!-- fim footer -->
+
+</body>
+</html>
